@@ -1,0 +1,11 @@
+{
+  "run_name": "Execute 05_validation",
+  "tasks": [{
+    "task_key": "validation",
+    "notebook_task": {
+      "notebook_path": "/Users/shubham.choubey@celebaltech.com/05_validation",
+      "source": "WORKSPACE"
+    },
+    "timeout_seconds": 600
+  }]
+}

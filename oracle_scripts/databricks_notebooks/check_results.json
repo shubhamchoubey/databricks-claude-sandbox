@@ -1,0 +1,12 @@
+{
+  "run_name": "Check Tier Results",
+  "tasks": [{
+    "task_key": "check_results",
+    "sql_task": {
+      "query": {
+        "query": "USE oracle_migration; SELECT segment, COUNT(*) as customer_count, ROUND(MIN(spend.total_spend), 2) as min_spend, ROUND(AVG(spend.total_spend), 2) as avg_spend, ROUND(MAX(spend.total_spend), 2) as max_spend FROM customers c LEFT JOIN (SELECT customer_id, SUM(p.unit_price * t.quantity) as total_spend FROM sales_transactions t JOIN products p ON t.product_id = p.product_id GROUP BY customer_id) spend ON c.customer_id = spend.customer_id GROUP BY segment ORDER BY CASE segment WHEN 'GOLD' THEN 1 WHEN 'SILVER' THEN 2 WHEN 'BRONZE' THEN 3 END"
+      }
+    },
+    "timeout_seconds": 300
+  }]
+}

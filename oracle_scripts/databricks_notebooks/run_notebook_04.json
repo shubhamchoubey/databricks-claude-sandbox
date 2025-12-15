@@ -1,0 +1,11 @@
+{
+  "run_name": "Execute 04_execute_pipeline",
+  "tasks": [{
+    "task_key": "execute_pipeline",
+    "notebook_task": {
+      "notebook_path": "/Users/shubham.choubey@celebaltech.com/04_execute_pipeline",
+      "source": "WORKSPACE"
+    },
+    "timeout_seconds": 600
+  }]
+}

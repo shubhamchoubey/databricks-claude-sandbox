@@ -1,0 +1,11 @@
+{
+  "run_name": "Execute 02_generate_sample_data",
+  "tasks": [{
+    "task_key": "generate_data",
+    "notebook_task": {
+      "notebook_path": "/Users/shubham.choubey@celebaltech.com/02_generate_sample_data",
+      "source": "WORKSPACE"
+    },
+    "timeout_seconds": 600
+  }]
+}

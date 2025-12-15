@@ -1,0 +1,11 @@
+{
+  "run_name": "Get Actual Output",
+  "tasks": [{
+    "task_key": "query_results",
+    "notebook_task": {
+      "notebook_path": "/Users/shubham.choubey@celebaltech.com/get_actual_output",
+      "source": "WORKSPACE"
+    },
+    "timeout_seconds": 300
+  }]
+}

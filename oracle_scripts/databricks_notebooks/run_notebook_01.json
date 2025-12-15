@@ -1,0 +1,11 @@
+{
+  "run_name": "Execute 01_create_delta_tables",
+  "tasks": [{
+    "task_key": "create_tables",
+    "notebook_task": {
+      "notebook_path": "/Users/shubham.choubey@celebaltech.com/01_create_delta_tables",
+      "source": "WORKSPACE"
+    },
+    "timeout_seconds": 600
+  }]
+}
